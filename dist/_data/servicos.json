@@ -1,0 +1,12 @@
+{
+	"servicos": [
+		{
+			"servico": "Manutenção",
+			"imagem": "/servicos/manutencao.jpg"
+		},
+		{
+			"servico": "Venda Novos",
+			"imagem": "/servicos/venda-novos.jpg"
+		}
+	]
+}

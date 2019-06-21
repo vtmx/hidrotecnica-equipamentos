@@ -1,0 +1,34 @@
+{% include "header.njk" %}
+
+	<h1>Teste</h1>
+
+	<ul>
+		<li>{{ info.horario }} 2</li>
+		<li>{{ info.endereco }}</li>
+		<li>{{ info.tel }}</li>
+		<li>{{ info.email }}</li>
+		<li>{{ info.inscEst }}</li>
+		<li>{{ info.tipoServico }}</li>
+		<li>{{ info.projetos }}</li>
+		<li>{{ info.diferencial }}</li>
+	</ul>
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+			<section class="error-404 not-found">
+				<header class="page-header">
+					<h1 class="page-title"></h1>
+					<p class="line-1"></p>
+					<p class="line-2"></p>
+				</header><!-- .page-header -->
+
+				<div class="page-content">
+					<div class="back-home">
+						<a href="/"></a>
+					</div>
+				</div><!-- .page-content -->
+			</section><!-- .error-404 -->
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+{% include "footer.njk" %}

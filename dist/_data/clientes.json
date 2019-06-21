@@ -1,0 +1,10 @@
+[
+	{
+		"nome": "Shell",
+		"imagem": "/clientes/shell.jpg"
+	},
+	{
+		"nome": "Texaco",
+		"imagem": "/clientes/texaco.jpg"
+	}
+]
