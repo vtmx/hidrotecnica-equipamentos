@@ -1,7 +1,6 @@
 {% include "header.njk" %}
 
 	<h1>Teste</h1>
-
 	<ul>
 		<li>{{ info.horario }} 2</li>
 		<li>{{ info.endereco }}</li>
@@ -12,6 +11,10 @@
 		<li>{{ info.projetos }}</li>
 		<li>{{ info.diferencial }}</li>
 	</ul>
+
+  {% for cliente in clientes %}
+    <li>{{ cliente.nome }}</li>
+  {% endfor %}
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">

@@ -1,16 +1,14 @@
-{
-	"projetos": [
-		{
-			"empresa": "CSN",
-			"imagem": "/projetos/csn.png"
-		},
-		{
-			"empresa": "Ipiranga",
-			"imagem": "/projetos/ipiranga.png"
-		},
-		{
-			"empresa": "Shell",
-			"imagem": "/projetos/shell.png"
-		}
-	]
-}
+[
+  {
+    "empresa": "CSN",
+    "imagem": "/projetos/csn.png"
+  },
+  {
+    "empresa": "Ipiranga",
+    "imagem": "/projetos/ipiranga.png"
+  },
+  {
+    "empresa": "Shell",
+    "imagem": "/projetos/shell.png"
+  }
+]
