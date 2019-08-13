@@ -1,7 +1,43 @@
-.site-menu {
+.site-menu,
+.site-footer,
+.main-nav li li,
+.backtotop {
   background-color: #04192b;
 }
 
-.site-footer {
-  background-color: #04192b;
+.main-nav a{
+  font-weight: 500;
+}
+
+.main-nav li > ul {
+  top: 59%;
+}
+
+.site-extra-text {
+  text-align: left;
+}
+
+.main-nav li li a,
+.main-nav li li.menu-item-has-children:after {
+  color: #eee;
+}
+
+.main-nav li li a:after {
+  background: #eee;
+}
+
+.site-footer .footer-copyright {
+  color: #66839c;
+}
+
+.backtotop .fa {
+  color: #fff;
+}
+
+.backtotop:hover .fa {
+  color: #ffc811;
+}
+
+.backtotop:active {
+  transform: scale(.95);
 }
