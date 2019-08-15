@@ -1,13 +1,9 @@
 {
   "name": "hidrotecnica-equipamentos",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "description": "Site da empresa Hidrotécnica Equipamentos.",
+  "author": "Vitor Melo",
+  "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "^0.8.3"
   }
