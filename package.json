@@ -4,5 +4,7 @@
   "description": "Site da empresa Hidroténica Equipamentos",
   "author": "",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "@11ty/eleventy": "^0.8.3"
+  }
 }
