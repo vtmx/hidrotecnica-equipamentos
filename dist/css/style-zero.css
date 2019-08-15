@@ -58,12 +58,18 @@ h2, p {
 
 .header .contact {
   display: flex;
+  flex: 1;
 }
 
 .header .contact .item {
   display: flex;
   align-items: center;
+  flex: 1;
   margin-left: 32px;
+}
+
+.header .contact .item:first-child {
+  flex: 1.5;
 }
 
 .header .contact .icon {
@@ -134,9 +140,34 @@ h2, p {
 
 .nav .link:active::after {
   transform: scale(.95, 1);
+  transition: none;
+}
+
+/* =hero */
+
+.hero {
+  position: relative;
+  min-height: 480px;
+  background: #eee url(/img/bg/pheader-s4.jpg) no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.hero::before {
+  content: '';
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  min-height: 480px;
+  background: rgba(0, 25, 40, .8);
+}
+
+.hero .content {
+  z-index: 1;
 }
 
 /* =services */
+
 .services {
   padding: 80px 0;
   background: var(--color-primary) url(/img/bg/bg-iconbox-1.jpg) no-repeat;
@@ -149,7 +180,7 @@ h2, p {
 }
 
 .services .service {
-  padding: 0 8px;
+  padding: 0 16px;
   text-align: center;
 }
 

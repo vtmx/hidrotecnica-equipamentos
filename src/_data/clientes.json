@@ -1,10 +1,17 @@
 [
 	{
-		"nome": "Shell",
-		"imagem": "/clientes/shell.jpg"
+		"nome": "CSN",
+		"logo": "/img/clientes/csn.png",
+		"link": "http://www.csn.com.br"
 	},
 	{
-		"nome": "Texaco",
-		"imagem": "/clientes/texaco.jpg"
-	}
+		"nome": "Shell",
+		"logo": "/img/clientes/ipiranga.png",
+		"link": "https://www.shell.com.br"
+  },
+  {
+    "nome": "Ipiranga",
+    "logo": "/img/clientes/shell.png",
+    "link": "https://portal.ipiranga"
+  }
 ]

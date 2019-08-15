@@ -1,12 +1,17 @@
-{
-	"servicos": [
-		{
-			"servico": "Manutenção",
-			"imagem": "/servicos/manutencao.jpg"
-		},
-		{
-			"servico": "Venda Novos",
-			"imagem": "/servicos/venda-novos.jpg"
-		}
-	]
-}
+[
+  {
+    "titulo": "Manutenção",
+    "descricao": "Value talent cultivation and encourage creative innovation",
+    "icone": "flaticon-mathematics"
+  },
+  {
+    "titulo": "Venda",
+    "descricao": "Value talent cultivation and encourage creative innovation",
+    "icone": "icon flaticon-science-1"
+  },
+  {
+    "titulo": "Venda 2",
+    "descricao": "Value talent cultivation and encourage creative innovation",
+    "icone": "icon flaticon-science"
+  }
+]

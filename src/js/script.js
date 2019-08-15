@@ -23,7 +23,7 @@ class Plugin {
     });
   }
 
-  fixedElement(element, classe) {
+  sticky(element, classe) {
     this.element = document.querySelector(element);
     window.addEventListener('scroll', () => {
       if (window.scrollY > this.element.offsetHeight) {
@@ -34,9 +34,10 @@ class Plugin {
     });
   }
 
-  navScrollSmooth(elements, classe) {
+  navScroll(elements, classe, offset) {
     this.elements = document.querySelectorAll(elements);
     this.classe = classe;
+    this.offset = offset;
 
     this.elements.forEach(element => {
       element.addEventListener('click', event => {
@@ -52,36 +53,12 @@ class Plugin {
         this.addClass(event.currentTarget, this.classe);
 
         window.scrollTo({
-          top: section.offsetTop - 140,
+          top: section.offsetTop - this.offset,
           behavior: 'smooth'
         });
       });
     });
   }
-
-  // navScrollSmooth(elements) {
-  //   this.elements = document.querySelectorAll(elements);
-
-  //   this.elements.forEach(element => {
-  //     element.addEventListener('click', event => {
-  //       event.preventDefault();
-
-  //       const href = event.currentTarget.getAttribute('href');
-  //       const section = document.querySelector(href);
-
-  //       this.removeClasses('.nav a', 'current-menu-item');
-  //       this.addClass(event.currentTarget.parentNode, 'current-menu-item');
-
-  //       const header = document.querySelector('.site-header');
-  //       const elementTop = section.offsetTop - (header.offsetHeight - 23);
-
-  //       window.scrollTo({
-  //         top: elementTop,
-  //         behavior: 'smooth'
-  //       });
-  //     });
-  //   });
-  // }
 
   scrollToTop(element) {
     const button = document.querySelector(element);
@@ -106,6 +83,6 @@ class Plugin {
 
 const plugin = new Plugin();
 
-plugin.fixedElement('.nav', 'fixed');
+plugin.sticky('.nav', 'fixed');
 plugin.scrollToTop('#scroll-top');
-plugin.navScrollSmooth('.nav a', 'active');
+plugin.navScroll('.nav a', 'active', 140);

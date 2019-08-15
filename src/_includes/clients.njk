@@ -1,0 +1,11 @@
+<section id="clients" class="section clients">
+    <h2 class="title">Clientes</h2>
+
+    <div class="container">
+    {% for cliente in clientes %}
+      <div class="client">
+        <a href="{{ cliente.link }}" target="_blank"><img src="{{ cliente.logo }}" alt="Loco da empresa {{ cliente.nome }}"></a>
+      </div>
+    {% endfor %}
+  </div> <!-- .container -->
+</section> <!-- .clients -->

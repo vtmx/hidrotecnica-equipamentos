@@ -44,7 +44,7 @@
             <i class="icon flaticon-clock"></i>
             <div>
               <h2 class="title">Horário:</h2>
-              <p class="info">Seg - Sex: 8h às 17h</p>
+              <p class="info">{{ info.horario }}</p>
             </div>
           </div>
 
@@ -52,7 +52,7 @@
             <i class="icon flaticon-web"></i>
             <div>
               <h2 class="title">Contato:</h2>
-              <p class="info">ht@hidrotecnicarj.com.br</p>
+              <p class="info">{{ info.email }}</p>
             </div>
           </div>
         </div>
@@ -67,74 +67,4 @@
       </div>
     </nav>
 
-    <div id="page" class="hfeed site">
-      {# <header id="masthead" class="site-header header-v1 clearfix">
-        <div class="header-main clearfix">
-          <div class="site-contact">
-            <div class="container">
-              <div class="row">
-                <div class="site-logo col-md-3 col-sm-6 col-xs-6">
-                  <a href="http://demo2.steelthemes.com/factoryhub" class="logo">
-                    <img src="/img/site/logo.svg" alt="FactoryHub" class="logo-dark show-logo" alt="Logo Hidrotécnica Equipamentos">
-                  </a>
-                  <h1 class="site-title">
-                    <a href="http://demo2.steelthemes.com/factoryhub" rel="home">{{ seo.title }}</a>
-                  </h1>
-                  <h2 class="site-description">{{ seo.description }}</h2>
-                </div> <!-- .site-logo -->
-
-                <div class="site-extra-text col-md-9 col-sm-6 col-xs-6">
-                  <div class="extra-item item-text">
-                    <div class="style-2">
-                      <div class="location item-2">
-                        <i class="flaticon-pin"></i> <div><span>Local:</span>Rua Vinte e Quatro de Maio, 25-Gap-III, RJ</div>
-                      </div>
-
-                      <div class="opening item-2">
-                        <i class="flaticon-clock"></i><div><span>Horário:</span>Seg - Sex: 8h às 17h</div>
-                      </div>
-
-                      <div class="contact item-2">
-                        <i class="flaticon-web"></i> <div><span>Contato:</span>ht@hidrotecnicarj.com.br</div>
-                      </div>
-                      
-                    </div> <!-- .site-extra-text -->
-                  </div> <!-- .row -->
-                </div> <!-- .container -->
-              </div> <!-- .site-contact -->
-            </div> <!-- .header-main -->
-          </div> <!-- .site-header -->
-
-          <div class="site-menu">
-            <div class="container">
-              <div class="row">
-                <div class="site-nav col-sm-12 col-xs-12 col-md-9">
-                  <nav id="site-navigation" class="main-nav primary-nav nav">
-                    <ul id="primary-menu" class="menu">
-                      <li class="menu-item current-menu-item">
-                        <a href="#home">Home</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="#services">Serviços</a>
-                      </li>
-                      <li class="menu-item">
-                        <a href="#clients">Clientes</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-                <div class="col-md-3 col-sm-12 col-xs-12 extra-item menu-item-text">
-                  <i class="flaticon-technology-1"></i>
-                  <div class="extra-text">
-                    <p class="fh-text">Telefone</p>
-                    <p class="number">(21) 3881-1718</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a href="#" class="navbar-toggle">
-          <span class="navbar-icon"><span class="navbars-line"></span></span>
-        </a>
-      </header> <!-- header --> #}
+    <main class="main">
