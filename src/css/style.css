@@ -358,9 +358,7 @@ h2, p {
 }
 
 @media(max-width: 1200px) {
-  .nav .container {
-    padding: 0;
-  }
+  
 }
 
 @media(max-width: 720px) {
@@ -378,6 +376,10 @@ h2, p {
 
   .header .logo img {
     margin: 0 auto;
+  }
+
+  .nav .container {
+    padding: 0;
   }
 
   .nav a {

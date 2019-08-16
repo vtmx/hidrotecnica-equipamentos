@@ -357,6 +357,10 @@ h2, p {
   transform: scale(.95);
 }
 
+@media(max-width: 1200px) {
+  
+}
+
 @media(max-width: 720px) {
   .container {
     flex-wrap: wrap;
