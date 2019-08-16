@@ -30,7 +30,7 @@ img {
   max-width: 100%;
 }
 
-h2, p {
+h2, h3, p {
   margin: 0;
   padding: 0;
 }
@@ -239,7 +239,7 @@ h2, p {
 /* =clients */
 
 .clients {
-  padding: 36px 0;
+  padding: 80px 0;
 }
 
 .clients .title {
@@ -308,15 +308,19 @@ h2, p {
   line-height: 1.5;
 }
 
+.footer .title {
+	margin-bottom: 30px;
+  font-size: 18px;
+	font-weight: normal;
+	color: #ffc811;
+	text-transform: uppercase;
+}
+
 .footer .copyright {
   padding: 32px 0;
   border-top: 1px solid #0a253d;
   text-align: center;
   color: #66839c;
-}
-
-.footer .copyright .author::before {
-  content: ' - ';
 }
 
 /* =scroll-top */
@@ -401,10 +405,6 @@ h2, p {
   .footer .copyright .author {
     display: block;
     margin-top: 4px;
-  }
-
-  .footer .copyright .author::before {
-    display: none;
   }
 }
 
