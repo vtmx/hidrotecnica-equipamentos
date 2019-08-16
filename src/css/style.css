@@ -135,14 +135,24 @@ h2, h3, p {
   color: #fff;
   margin-right: 4px;
   padding: 24px 24px;
+  background-position: center;
   font-size: 16px;
   font-weight: 500;
   text-align: center;
+  outline: none;
+  transition: background 0.8s;
 }
 
-.nav .link:hover, .nav .active {
-  color: var(--color-secondary);
-  transition: .3s;
+.nav .link:hover {
+  /* background: var(--color-primary) radial-gradient(circle, transparent 1%, var(--color-primary) 1%) center/15000%; */
+  background-color: var(--color-primary);
+}
+
+.nav .link:active {
+  /* background-color: #315471; */
+  background-color: #1d3344;
+  background-size: 100%;
+  transition: background 0s;
 }
 
 .nav .link::after,
@@ -362,6 +372,7 @@ h2, h3, p {
 }
 
 .scroll-top:active {
+  background: #315471;
   transform: scale(.95);
 }
 
@@ -371,6 +382,17 @@ h2, h3, p {
 @media(max-width: 720px) {
   .container {
     flex-wrap: wrap;
+  }
+
+  .main .container, .footer .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+  }
+
+  .main .container .col,
+  .footer .container .col {
+    margin-bottom: 32px;
   }
 
   .header .contact {

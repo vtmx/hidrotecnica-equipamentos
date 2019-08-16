@@ -34,10 +34,10 @@ class Plugin {
     });
   }
 
-  navScroll(elements, classe, offset) {
+  navScroll(elements, offset, classe) {
+    this.offset = document.querySelector(offset).offsetHeight;
     this.elements = document.querySelectorAll(elements);
     this.classe = classe;
-    this.offset = offset;
 
     this.elements.forEach(element => {
       element.addEventListener('click', event => {
@@ -85,4 +85,4 @@ const plugin = new Plugin();
 
 plugin.sticky('.nav', 'fixed');
 plugin.scrollToTop('#scroll-top');
-plugin.navScroll('.nav a', 'active', 140);
+plugin.navScroll('.nav a', 'nav', 'active');
