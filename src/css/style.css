@@ -357,6 +357,12 @@ h2, p {
   transform: scale(.95);
 }
 
+@media(max-width: 1200px) {
+  .nav .container {
+    padding: 0;
+  }
+}
+
 @media(max-width: 720px) {
   .container {
     flex-wrap: wrap;
@@ -372,10 +378,6 @@ h2, p {
 
   .header .logo img {
     margin: 0 auto;
-  }
-
-  .nav .container {
-    padding: 0;
   }
 
   .nav a {
