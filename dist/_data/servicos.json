@@ -1,17 +1,17 @@
 [
   {
     "titulo": "Manutenção",
-    "descricao": "Value talent cultivation and encourage creative innovation",
+    "descricao": "Manutenção de ...",
     "icone": "fas fa-cogs"
   },
   {
     "titulo": "Venda",
-    "descricao": "Value talent cultivation and encourage creative innovation",
-    "icone": "fas fa-vial"
+    "descricao": "Peça 1, Peça 2, Peça3...",
+    "icone": "fas fa-credit-card"
   },
   {
-    "titulo": "Venda 2",
-    "descricao": "Value talent cultivation and encourage creative innovation",
-    "icone": "fas fa-shopping-cart"
+    "titulo": "Construção",
+    "descricao": "Descrever item 3...",
+    "icone": "fas fa-tools"
   }
 ]

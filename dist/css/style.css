@@ -267,20 +267,18 @@ h2, h3, p {
   background: #ffc811;
 }
 
-.clients a,
-.clients img {
+.clients .link,
+.clients .img {
   display: block;
 }
 
-.clients img {
+.clients .link {
   border: 3px solid #eee;
-}
-
-.clients a {
   filter: grayscale(1);
 }
 
-.clients a:hover {
+.clients .link:hover {
+  border-color: var(--color-secondary);
   filter: grayscale(0);
 }
 
@@ -338,8 +336,8 @@ h2, h3, p {
   display: block;
   position: fixed;
   z-index: 1;
-  bottom: 60px;
-  right: 60px;
+  bottom: 16px;
+  right: 32px;
   width: 60px;
   height: 60px;
   background: var(--color-primary);
@@ -367,6 +365,7 @@ h2, h3, p {
 }
 
 .scroll-top.show-scroll {
+  bottom: 32px;
   opacity: 1;
 }
 
@@ -414,13 +413,18 @@ h2, h3, p {
     flex: 1;
   }
 
-  .scroll-top {
+  .scroll-top,
+  .scroll-top.show-scroll {
     width: 48px;
     height: 48px;
-    bottom: 16px;
+    bottom: 32px;
     right: 16px;
-    line-height: 40px;
+    line-height: 56px;
     border-width: 2px;
+  }
+
+  .scroll-top.show-scroll {
+    bottom: 16px;
   }
 
   .footer .copyright .author {
