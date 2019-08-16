@@ -10,14 +10,9 @@
     <title>{{ seo.title }}</title>
 
     <!-- Styles -->
-    {# <link rel="stylesheet" href="/css/bootstrap.min.css"> #}
-    {# <link rel="stylesheet" href="/css/style.css"> #}
-    {# <link rel="stylesheet" href="/css/style-custom.css"> #}
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-    <link rel="stylesheet" href="/css/flaticon.min.css">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/factoryplus-icons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
     
     <!-- Icon -->
     <link rel="icon" href="/img/site/favicon.png">
@@ -26,14 +21,12 @@
   <body id="home">
     <header class="header">
       <div class="container">
-        <div class="logo">
-          <a href="http://demo2.steelthemes.com/factoryhub" class="link">
-            <img src="/img/site/logo.svg" alt="FactoryHub" class="img logo-dark show-logo" alt="Logo Hidrotécnica Equipamentos">
-          </a>
-        </div>
+        <a class="logo" href="#" class="link">
+          <img src="/img/site/logo.svg" alt="FactoryHub" class="img logo-dark show-logo" alt="Logo Hidrotécnica Equipamentos">
+        </a>
         <div class="contact">
           <div class="item">
-            <i class="icon flaticon-pin"></i> 
+            <i class="icon fas fa-map-marker-alt"></i>
             <div>
               <h2 class="title">Local:</h2>
               <p class="info">Rua Vinte e Quatro de Maio, 25-Gap-III, RJ</p>
@@ -41,7 +34,7 @@
           </div>
 
           <div class="item">
-            <i class="icon flaticon-clock"></i>
+            <i class="icon far fa-clock"></i>
             <div>
               <h2 class="title">Horário:</h2>
               <p class="info">{{ info.horario }}</p>
@@ -49,7 +42,7 @@
           </div>
 
           <div class="item">
-            <i class="icon flaticon-web"></i>
+            <i class="icon far fa-envelope"></i>
             <div>
               <h2 class="title">Contato:</h2>
               <p class="info">{{ info.email }}</p>

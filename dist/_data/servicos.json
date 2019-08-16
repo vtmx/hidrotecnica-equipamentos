@@ -2,16 +2,16 @@
   {
     "titulo": "Manutenção",
     "descricao": "Value talent cultivation and encourage creative innovation",
-    "icone": "flaticon-mathematics"
+    "icone": "fas fa-cogs"
   },
   {
     "titulo": "Venda",
     "descricao": "Value talent cultivation and encourage creative innovation",
-    "icone": "icon flaticon-science-1"
+    "icone": "fas fa-vial"
   },
   {
     "titulo": "Venda 2",
     "descricao": "Value talent cultivation and encourage creative innovation",
-    "icone": "icon flaticon-science"
+    "icone": "fas fa-shopping-cart"
   }
 ]
