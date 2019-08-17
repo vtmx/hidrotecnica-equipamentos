@@ -78,39 +78,39 @@ h2, h3, p {
   max-width: 300px;
 }
 
-/* =contact */
+/* =info */
 
-.header .contact {
+.header .info {
   display: flex;
   flex-wrap: wrap;
 }
 
-.header .contact .item {
+.header .info .item {
   display: flex;
   align-items: center;
   margin-left: 32px;
 }
 
-.header .contact .item:first-child {
+.header .info .item:first-child {
   flex: 1;
 }
 
-.header .contact .icon {
+.header .info .icon {
   margin-right: 16px;
   color: var(--color-secondary);
 }
 
-.header .contact .icon::before {
+.header .info .icon::before {
   font-size: 32px;
 }
 
-.header .contact .title {
+.header .info .title {
   margin-bottom: 4px;
   font-size: 18px;
   font-weight: bold;
 }
 
-.header .contact .info {
+.header .info .info {
   font-weight: lighter;
   color: var(--color-light);
 }
@@ -346,7 +346,8 @@ h2, h3, p {
   transition: .3s;
 }
 
-.contact .button:hover {
+.contact .button:hover,
+.contact .button:focus {
   background: var(--color-primary);
   color: #fff;
 }
