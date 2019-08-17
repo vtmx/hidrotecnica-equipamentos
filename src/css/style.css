@@ -384,6 +384,10 @@ h2, h3, p {
   color: #fff;
 }
 
+textarea:-internal-autofill-selected {
+  background: #edfbf6 !important;
+}
+
 /* =footer */
 
 .footer {

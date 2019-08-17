@@ -107,7 +107,7 @@ contactForm.addEventListener('submit', e => {
     body: new URLSearchParams(formData).toString()
   }).then(res => {
     if (res) {
-      notification.classList.add('show');
+     alert('mensagem enviada');
     }
   });
 });
