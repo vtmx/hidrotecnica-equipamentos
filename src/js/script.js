@@ -107,10 +107,7 @@ contactForm.addEventListener('submit', e => {
     body: new URLSearchParams(formData).toString()
   }).then(res => {
     if (res) {
-      M.toast({
-        html: 'Thank you for your submission!',
-        classes: 'pulse'
-      });
+      notification.classList.add('show');
     }
   });
 });
