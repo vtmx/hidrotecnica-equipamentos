@@ -356,6 +356,34 @@ h2, h3, p {
   transform: scale(.95);
 }
 
+.contact .notification {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  align-content: space-between;
+  padding: 4px 8px 4px 16px;
+	background: #00d1b2;
+  color: #fff;
+  opacity: 0;
+  transition: .5s;
+}
+
+.contact .notification.show {
+  opacity: 1;
+}
+
+.contact .notification .status {
+  flex: 1;
+}
+
+.contact .notification .button {
+  padding: 16px;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+}
+
 /* =footer */
 
 .footer {

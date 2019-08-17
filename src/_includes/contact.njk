@@ -2,7 +2,7 @@
   <div class="container">
     <h2 class="title">Contato</h2>
 
-    <form class="form" name="contact" netlify>
+    <form class="form" name="contact" method="POST" action="/#contact" netlify>
       <div class="field">
         <label class="label" for="name">Nome:</label>
         <input id="name" class="input" type="text" name="name" required>
@@ -18,8 +18,10 @@
       <div class="field">
         <button class="button" type="submit">Enviar</button>
       </div>
-      <div class="notification">
 
+      <div class="notification show">
+        <span class="status">Mensagem enviada com sucesso!</span>
+        <a href="#" class="button"><i class="fas fa-times"></i></a>
       </div>
     </form>
 

@@ -86,3 +86,44 @@ const plugin = new Plugin();
 plugin.sticky('.nav', 'fixed');
 plugin.scrollToTop('#scroll-top');
 plugin.navScroll('.nav a', 'nav', 'active');
+
+const contactForm = document.querySelector('.contact form');
+const notification = document.querySelector('.contact .notification');
+const closeNotificationButton = document.querySelector('.contact .notification .button');
+
+
+
+let contactForm = document.querySelector('#contact form');
+
+contactForm.addEventListener('submit', e => {
+  e.preventDefault();
+  const formData = new FormData(contactForm);
+  fetch(contactForm.getAttribute('action'), {
+    method: 'POST',
+    headers: {
+      Accept: 'application/x-www-form-urlencoded;charset=UTF-8',
+      'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+    },
+    body: new URLSearchParams(formData).toString()
+  }).then(res => {
+    if (res) {
+      M.toast({
+        html: 'Thank you for your submission!',
+        classes: 'pulse'
+      });
+    }
+  });
+});
+
+
+
+// contactForm.addEventListener('submit', e => {
+//   e.preventDefault();
+//   notification.classList.add('show');
+// });
+
+closeNotificationButton.addEventListener('click', e => {
+  e.preventDefault();
+  let notification = document.querySelector('.contact .notification');
+  notification.classList.remove('show');
+});
