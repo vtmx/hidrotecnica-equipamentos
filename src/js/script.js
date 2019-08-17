@@ -91,10 +91,6 @@ const contactForm = document.querySelector('.contact form');
 const notification = document.querySelector('.contact .notification');
 const closeNotificationButton = document.querySelector('.contact .notification .button');
 
-
-
-let contactForm = document.querySelector('#contact form');
-
 contactForm.addEventListener('submit', e => {
   e.preventDefault();
   const formData = new FormData(contactForm);
@@ -111,8 +107,6 @@ contactForm.addEventListener('submit', e => {
     }
   });
 });
-
-
 
 // contactForm.addEventListener('submit', e => {
 //   e.preventDefault();
