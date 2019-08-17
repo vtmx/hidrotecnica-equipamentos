@@ -57,6 +57,7 @@
         <a class="link active" href="#home">Home</a>
         <a class="link" href="#services">Serviços</a>
         <a class="link" href="#clients">Clientes</a>
+        <a class="link" href="#contact">Contato</a>
       </div>
     </nav>
 
@@ -108,6 +109,32 @@
     
   </div> <!-- .container -->
 </section> <!-- .clients -->
+<section id="contact" class="section contact">
+  <div class="container">
+    <h2 class="title">Contato</h2>
+
+    <form class="form" name="contact" netlify>
+      <div class="field">
+        <label class="label" for="name">Nome:</label>
+        <input id="name" class="input" type="text" name="name" required>
+      </div>
+      <div class="field">
+        <label class="label" for="email">Email:</label>
+        <input id="email" class="input" type="email" name="email" required>
+      </div>
+      <div class="field">
+        <label class="label" for="message">Mensagem:</label>
+        <textarea id="message" class="textarea" name="message" required></textarea>
+      </div>
+      <div class="field">
+        <button class="button" type="submit">Enviar</button>
+      </div>
+      <div class="notification">
+
+      </div>
+    </form>
+  </div> <!-- .container -->
+</section> <!-- .section -->
   </main> <!-- .main -->
   
   <footer class="footer">

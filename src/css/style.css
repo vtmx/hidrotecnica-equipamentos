@@ -199,6 +199,24 @@ h2, h3, p {
   z-index: 1;
 }
 
+/* =section */
+
+.section .title {
+  font-size: 32px;
+  position: relative;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.section .title::after {
+  display: block;
+  content: '';
+  height: 4px;
+  width: 72px;
+  margin: 16px auto 0 auto;
+  background: #ffc811;
+}
+
 /* =services */
 
 .services {
@@ -251,22 +269,6 @@ h2, h3, p {
   padding: 80px 0;
 }
 
-.clients .title {
-  font-size: 32px;
-  position: relative;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.clients .title::after {
-  display: block;
-  content: '';
-  height: 4px;
-  width: 72px;
-  margin: 16px auto 0 auto;
-  background: #ffc811;
-}
-
 .clients .link,
 .clients .img {
   display: block;
@@ -280,6 +282,77 @@ h2, h3, p {
 .clients .link:hover {
   border-color: var(--color-secondary);
   filter: grayscale(0);
+}
+
+/* =contact */
+
+.contact {
+  padding: 80px 0;
+}
+
+.contact .container {
+  flex-direction: column;
+}
+
+.contact .form {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.contact .field {
+  margin-bottom: 24px;
+}
+
+.contact .label,
+.contact .input,
+.contact .textarea {
+  display: block;
+  width: 100%;
+}
+
+.contact .label {
+  margin-bottom: 4px;
+}
+
+.contact .input,
+.contact .textarea {
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  font: 14px Roboto, sans-serif;
+  color: #666;
+  transition: .3s;
+}
+
+.contact .textarea {
+  min-height: 150px;
+}
+
+.contact .input:focus,
+.contact .textarea:focus {
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 0 2px rgba(216, 204, 48, .32);
+}
+
+.contact .button {
+  background: var(--color-secondary);
+  padding: 16px 32px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.contact .button:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.contact .button:active {
+  transform: scale(.95);
 }
 
 /* =footer */
