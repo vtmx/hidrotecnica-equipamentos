@@ -304,6 +304,10 @@ h2, h3, p {
   margin-bottom: 24px;
 }
 
+.contact .field:last-child {
+  display: flex;
+}
+
 .contact .label,
 .contact .input,
 .contact .textarea {
@@ -337,9 +341,10 @@ h2, h3, p {
 }
 
 .contact .button {
-  background: var(--color-secondary);
+  margin-right: 16px;
   padding: 16px 32px;
   border-radius: 3px;
+  background: var(--color-secondary);
   border: none;
   outline: none;
   cursor: pointer;
@@ -358,26 +363,27 @@ h2, h3, p {
 
 .contact .notification {
   display: flex;
+  flex: 1;
   justify-items: center;
   align-items: center;
   align-content: space-between;
   padding: 4px 8px 4px 16px;
+  border-radius: 3px;
   color: #fff;
   opacity: 0;
   transition: .5s;
 }
 
+.contact .notification.show {
+  opacity: 1;
+}
+
 .contact .notification.success {
   background: #00d1b2;
-  
 }
 
 .contact .notification.warning {
   background: #ffdd57;
-}
-
-.contact .notification.show {
-  opacity: 1;
 }
 
 .contact .notification .status {
@@ -385,6 +391,7 @@ h2, h3, p {
 }
 
 .contact .notification .button {
+  margin: 0;
   padding: 16px;
   background: none;
   border: none;
@@ -588,5 +595,18 @@ textarea:-internal-autofill-selected {
 
   .nav.mobile .link::after {
     display: none;
+  }
+
+  .contact .field:last-child {
+    flex-direction: column;
+  }
+
+  .contact .button {
+    margin: 0 0 16px 0;
+    padding: 24px 32px;
+  }
+
+  .contact .notification {
+    padding: 8px 8px 8px 16px;
   }
 }
