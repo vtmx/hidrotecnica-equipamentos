@@ -362,10 +362,18 @@ h2, h3, p {
   align-items: center;
   align-content: space-between;
   padding: 4px 8px 4px 16px;
-	background: #00d1b2;
   color: #fff;
   opacity: 0;
   transition: .5s;
+}
+
+.contact .notification.success {
+  background: #00d1b2;
+  
+}
+
+.contact .notification.warning {
+  background: #ffdd57;
 }
 
 .contact .notification.show {

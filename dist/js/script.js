@@ -89,6 +89,7 @@ plugin.navScroll('.nav a', 'nav', 'active');
 
 const contactForm = document.querySelector('.contact form');
 const notification = document.querySelector('.contact .notification');
+const status = document.querySelector('.contact .status');
 const closeNotificationButton = document.querySelector('.contact .notification .button');
 
 contactForm.addEventListener('submit', e => {
@@ -103,15 +104,14 @@ contactForm.addEventListener('submit', e => {
     body: new URLSearchParams(formData).toString()
   }).then(res => {
     if (res) {
-     notification.classList.add('show');
+      status.textContent = 'Mensagem enviada com sucesso!';
+      notification.classList.add('show', 'success');
+    } else {
+      status.textContent = 'A mensagem não foi enviada, por favor tente mais tarde.'
+      notification.classList.add('show', 'warning');
     }
   });
 });
-
-// contactForm.addEventListener('submit', e => {
-//   e.preventDefault();
-//   notification.classList.add('show');
-// });
 
 closeNotificationButton.addEventListener('click', e => {
   e.preventDefault();
