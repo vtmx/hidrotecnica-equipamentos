@@ -103,7 +103,7 @@ contactForm.addEventListener('submit', e => {
     body: new URLSearchParams(formData).toString()
   }).then(res => {
     if (res) {
-     alert('mensagem enviada');
+     notification.classList.add('show');
     }
   });
 });
