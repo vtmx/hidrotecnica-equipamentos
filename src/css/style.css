@@ -55,7 +55,11 @@ img {
   max-width: 100%;
 }
 
-h2, h3, p {
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
 }
@@ -132,11 +136,9 @@ h2, h3, p {
 .header .info .title {
   margin-bottom: 4px;
   font-size: 18px;
-  font-weight: bold;
 }
 
 .header .info .info {
-  font-weight: lighter;
   color: var(--color-light);
 }
 
@@ -161,7 +163,6 @@ h2, h3, p {
   padding: 24px 24px;
   background-position: center;
   font-size: 16px;
-  font-weight: 500;
   text-align: center;
   outline: none;
   transition: background 0.8s;
@@ -229,7 +230,6 @@ h2, h3, p {
 .hero .text {
   z-index: 1;
   padding: 80px 0;
-  font-weight: normal;
 }
 
 .hero .title {
@@ -240,7 +240,6 @@ h2, h3, p {
 
 .hero .description {
   font-size: 24px;
-  font-weight: normal;
 }
 
 /* =section */
@@ -264,7 +263,7 @@ h2, h3, p {
 /* =services */
 
 .services {
-  padding: 80px 0;
+  padding: 120px 0;
   background: var(--color-primary) url(/img/bg/bg-iconbox-1.jpg) no-repeat;
   background-size: cover;
   color: #fff;
@@ -278,6 +277,10 @@ h2, h3, p {
   text-align: center;
 }
 
+.services .icon {
+  display: block;
+}
+
 .services .icon::before {
   color: #ffc811;
   font-size: 64px;
@@ -287,7 +290,6 @@ h2, h3, p {
 	margin: 0 0 32px 0;
 	padding: 16px;
 	font-size: 20px;
-	font-weight: 600;
 	position: relative;
 	color: #fff;
 }
@@ -310,7 +312,7 @@ h2, h3, p {
 /* =clients */
 
 .clients {
-  padding: 80px 0;
+  padding: 120px 0;
 }
 
 .clients .link,
@@ -501,7 +503,6 @@ textarea:-internal-autofill-selected {
 .footer .title {
 	margin-bottom: 30px;
   font-size: 18px;
-	font-weight: normal;
 	color: #ffc811;
 	text-transform: uppercase;
 }
@@ -556,7 +557,6 @@ textarea:-internal-autofill-selected {
   background: #315471;
   transform: scale(.95);
 }
-
 
 /* =media */
 
@@ -631,7 +631,7 @@ textarea:-internal-autofill-selected {
     max-width: 100%;
   }
 
-  .nav.mobile {
+  .nav {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -639,7 +639,7 @@ textarea:-internal-autofill-selected {
     z-index: 2;
   }
 
-  .nav.mobile .container {
+  .nav .container {
     flex-direction: column;
     position: fixed;
     top: 0;
@@ -648,20 +648,21 @@ textarea:-internal-autofill-selected {
     z-index: 2;
   }
 
-  .nav.mobile .link {
+  .nav .link {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
     font-size: 24px;
     background: var(--color-primary);
   }
 
-  .nav.mobile .link.active {
+  .nav .link.active {
     background: var(--color-secondary);
     color: var(--color-primary);
   }
 
-  .nav.mobile .link::after {
+  .nav .link::after {
     display: none;
   }
 
