@@ -1,16 +1,41 @@
-* {
-  box-sizing: border-box;
-}
-
 :root {
   --color-primary: #04192b;
   --color-secondary: #ffc811;
   --color-light: #999;
 }
 
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #04192b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #375370;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #04192b;
+}
+
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+
 ::selection {
   background: var(--color-primary);
   color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -179,6 +204,8 @@ h2, h3, p {
 /* =hero */
 
 .hero {
+  display: flex;
+  align-items: center;
   position: relative;
   min-height: 480px;
   background: #eee url(/img/bg/pheader-s4.jpg) no-repeat;
@@ -195,8 +222,25 @@ h2, h3, p {
   background: rgba(0, 25, 40, .8);
 }
 
-.hero .content {
+.hero .container {
+  width: 100%;
+}
+
+.hero .text {
   z-index: 1;
+  padding: 80px 0;
+  font-weight: normal;
+}
+
+.hero .title {
+  margin-bottom: 8px;
+  font-size: 48px;
+  color: var(--color-secondary);
+}
+
+.hero .description {
+  font-size: 24px;
+  font-weight: normal;
 }
 
 /* =section */
@@ -282,6 +326,24 @@ h2, h3, p {
 .clients .link:hover {
   border-color: var(--color-secondary);
   filter: grayscale(0);
+}
+
+/* =map */
+
+.map .container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 30%;  /* This is the aspect ratio */
+}
+
+.map .container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 /* =contact */
@@ -498,6 +560,12 @@ textarea:-internal-autofill-selected {
 
 /* =media */
 
+@media(max-width: 1200px) {
+  .header .info .item:nth-child(2) {
+    display: none;
+  }
+}
+
 @media(max-width: 720px) {
   .container {
     flex-wrap: wrap;
@@ -506,16 +574,12 @@ textarea:-internal-autofill-selected {
   .main .container, .footer .container {
     flex-direction: column;
     justify-content: center;
-    align-items: center
+    align-items: center;
   }
 
   .main .container .col,
   .footer .container .col {
     margin-bottom: 32px;
-  }
-
-  .header .contact {
-    display: none;
   }
 
   .header .logo {
@@ -524,6 +588,10 @@ textarea:-internal-autofill-selected {
 
   .header .logo img {
     margin: 0 auto;
+  }
+  
+  .header .info {
+    display: none;
   }
 
   .nav .container {
