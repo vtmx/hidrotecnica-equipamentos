@@ -600,6 +600,7 @@ textarea:-internal-autofill-selected {
 
   .nav a {
     flex: 1;
+    padding: 24px 8px;
   }
 
   .scroll-top,
@@ -631,7 +632,13 @@ textarea:-internal-autofill-selected {
     max-width: 100%;
   }
 
-  .nav {
+  .nav .link {
+    margin: 0;
+    padding: 24px 0;
+  }
+
+  /* .nav {
+    display: none;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -664,7 +671,7 @@ textarea:-internal-autofill-selected {
 
   .nav .link::after {
     display: none;
-  }
+  } */
 
   .contact .field:last-child {
     flex-direction: column;
