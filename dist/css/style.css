@@ -209,7 +209,7 @@ h1, h2, h3, h4, h5, h6, p {
   align-items: center;
   position: relative;
   min-height: 480px;
-  background: #eee url(/img/bg/pheader-s4.jpg) no-repeat;
+  background: var(--color-primary) url(/img/bg/pheader-s4.jpg) no-repeat;
   background-size: cover;
   color: #fff;
 }
@@ -236,10 +236,14 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 8px;
   font-size: 48px;
   color: var(--color-secondary);
+  animation: fade-top 1s forwards;
+  opacity: 0;
 }
 
 .hero .description {
   font-size: 24px;
+  animation: fade-top 1s .5s forwards;
+  opacity: 0;
 }
 
 /* =section */
@@ -683,5 +687,65 @@ textarea:-internal-autofill-selected {
 
   .contact .notification {
     padding: 8px 8px 8px 16px;
+  }
+}
+
+/* =animation */
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-top {
+  from {
+    transform: translate3d(0, 32px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-bottom {
+  from {
+    transform: translate3d(0, 32px, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-left {
+  from {
+    transform: translate3d(-32px, 0, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  from {
+    transform: translate3d(32px, 0, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 }
