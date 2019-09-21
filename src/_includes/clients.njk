@@ -4,7 +4,7 @@
     <div class="container">
     {% for cliente in clientes %}
       <div class="client col">
-        <a class="link" href="{{ cliente.link }}" target="_blank"><img class="img" src="{{ cliente.logo }}" alt="Loco da empresa {{ cliente.nome }}"></a>
+       <img class="img" src="{{ cliente.logo }}" alt="Loco da empresa {{ cliente.nome }}">
       </div>
     {% endfor %}
   </div> <!-- .container -->

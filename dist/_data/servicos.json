@@ -1,17 +1,17 @@
 [
   {
-    "titulo": "Manutenção",
+    "titulo": "Instalações",
     "descricao": "Manutenção de ...",
     "icone": "fas fa-cogs"
   },
   {
-    "titulo": "Venda",
+    "titulo": "Manutenções",
     "descricao": "Peça 1, Peça 2, Peça3...",
-    "icone": "fas fa-credit-card"
+    "icone": "fas fa-tools"
   },
   {
-    "titulo": "Construção",
+    "titulo": "Consultoria",
     "descricao": "Descrever item 3...",
-    "icone": "fas fa-tools"
+    "icone": "fas fa-pencil-ruler"
   }
 ]
