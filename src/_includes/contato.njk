@@ -1,0 +1,33 @@
+<section id="contact" class="section contact">
+  <div class="container">
+    <h2 class="title">Contato</h2>
+    <p>
+      Maiores informações sobre nossa empresa e nossos trabalhos, estaremos sempre
+      abertos e disponível à quaisquer que forem os esclarecimentos e ou sugestões
+      a serem de forma elucidadas e compartilhadas.
+    </p>
+
+    <form class="form" name="contact" method="POST" action="/#contact" netlify>
+      <div class="field">
+        <label class="label" for="name">Nome:</label>
+        <input id="name" class="input" type="text" name="name" required>
+      </div>
+      <div class="field">
+        <label class="label" for="email">Email:</label>
+        <input id="email" class="input" type="email" name="email" required>
+      </div>
+      <div class="field">
+        <label class="label" for="message">Mensagem:</label>
+        <textarea id="message" class="textarea" name="message" required></textarea>
+      </div>
+      <div class="field">
+        <button class="button" type="submit">Enviar</button>
+
+        <div class="notification success">
+          <span class="status"></span>
+          <a href="#" class="button"><i class="fas fa-times"></i></a>
+        </div>
+      </div>
+    </form>
+  </div> <!-- .container -->
+</section> <!-- .section -->

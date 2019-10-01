@@ -1,17 +1,14 @@
 [
   {
     "titulo": "Instalações",
-    "descricao": "Manutenção de ...",
     "icone": "fas fa-cogs"
   },
   {
-    "titulo": "Manutenções",
-    "descricao": "Peça 1, Peça 2, Peça3...",
+    "titulo": "Manutenção",
     "icone": "fas fa-tools"
   },
   {
     "titulo": "Consultoria",
-    "descricao": "Descrever item 3...",
-    "icone": "fas fa-pencil-ruler"
+    "icone": "fas fa-hands-helping"
   }
 ]

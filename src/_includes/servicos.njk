@@ -1,0 +1,12 @@
+<section id="services" class="section services">
+  <h2 class="title">Serviços</h2>
+
+  <div class="container">
+    {% for servico in servicos %}
+      <div class="service col">
+        <i class="icon {{ servico.icone }}"></i>
+        <h4 class="title">{{ servico.titulo }}</h4>
+    </div> <!-- .servico -->
+    {% endfor %}
+  </div> <!-- .container -->
+</section> <!-- .services -->

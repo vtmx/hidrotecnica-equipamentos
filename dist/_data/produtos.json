@@ -1,0 +1,14 @@
+[
+  {
+    "nome": "Instalações",
+    "imagem": "fas fa-cogs"
+  },
+  {
+    "nome": "Manutenção",
+    "icone": "fas fa-tools"
+  },
+  {
+    "nome": "Consultoria",
+    "imagem": "fas fa-hands-helping"
+  }
+]
