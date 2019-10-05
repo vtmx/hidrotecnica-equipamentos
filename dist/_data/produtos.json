@@ -1,14 +1,27 @@
-[
-  {
-    "nome": "Instalações",
-    "imagem": "fas fa-cogs"
-  },
-  {
-    "nome": "Manutenção",
-    "icone": "fas fa-tools"
-  },
-  {
-    "nome": "Consultoria",
-    "imagem": "fas fa-hands-helping"
-  }
-]
+{
+  "titulo": "Produto",
+  "produtos": [
+    {
+      "nome": "Bomba Auto-Aspirante",
+      "descricao": "Apresentamos um de nossos modelos de grande utilidade para descarregamento de produtos voláteis",
+      "imagens": [
+        {
+          "url": "teste1.jpg",
+          "descricao": "tal coisa 10"
+        },
+        {
+          "url": "teste2.jpg",
+          "descricao": "tal coisa 2"
+        },
+        {
+          "url": "teste3.jpg",
+          "descricao": "tal coisa 3"
+        },
+        {
+          "url": "teste4.jpg",
+          "descricao": "tal coisa 4"
+        }
+      ]
+    }
+  ]
+}

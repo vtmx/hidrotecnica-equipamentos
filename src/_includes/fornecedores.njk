@@ -1,0 +1,11 @@
+<section id="fornecedores" class="section providers">
+  <h2 class="title">{{ fornecedores.titulo }}</h2>
+
+  <div class="container">
+    {% for fornecedor in fornecedores.fornecedores %}
+      <div class="provider col">
+        <img class="img" src="{{ fornecedor.logo }}" alt="Logo da empresa {{ fornecedor.nome }}">
+      </div>
+    {% endfor %}
+  </div> <!-- .container -->
+</section> <!-- .clients -->

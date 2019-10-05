@@ -209,7 +209,8 @@ h1, h2, h3, h4, h5, h6, p {
   align-items: center;
   position: relative;
   min-height: 480px;
-  background: var(--color-primary) url(/img/bg/pheader-s4.jpg) no-repeat;
+  background-color: var(--color-primary);
+  background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
 }
@@ -248,6 +249,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* =section */
 
+.section {
+  padding: 120px 0;
+}
+
 .section .title {
   font-size: 32px;
   position: relative;
@@ -264,10 +269,25 @@ h1, h2, h3, h4, h5, h6, p {
   background: #ffc811;
 }
 
+/* =sobre */
+
+.about .container {
+  align-items: center;
+}
+
+.about .description {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: justify;
+}
+
+.about .img {
+  max-width: calc(50% - 32px);
+}
+
 /* =services */
 
 .services {
-  padding: 120px 0;
   background: var(--color-primary) url(/img/bg/bg-iconbox-1.jpg) no-repeat;
   background-size: cover;
   color: #fff;
@@ -306,29 +326,22 @@ h1, h2, h3, h4, h5, h6, p {
   display: none;
 }
 
-/* =equipaments */
-
-.equipaments {
-  padding: 120px 0;
-}
-
-
 /* =clients */
 
 .clients {
-  padding: 120px 0;
   background: #f7f7f7;
 }
 
-.clients .img {
+.clients .img, .provider img {
   display: block;
-}
-
-.clients .img {
   border: 3px solid #eee;
 }
 
 /* =map */
+
+.map {
+  padding: 0;
+}
 
 .map .container {
   position: relative;
@@ -347,10 +360,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* =contact */
-
-.contact {
-  padding: 80px 0;
-}
 
 .contact .container {
   flex-direction: column;

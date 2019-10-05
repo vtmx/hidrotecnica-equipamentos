@@ -1,11 +1,15 @@
-{# <section id="produtos" class="section produtos">
-  <h2 class="title">Produtos</h2>
+<section id="produtos" class="section produtos">
+  <h2 class="title">{{ produtos.titulo }}</h2>
 
   <div class="container">
-    {% for produto in produtos %}
       <div class="produto">
-        
+        {% for produto in produtos.produtos %}
+          {{ produto.nome }}
+          {% for imagem in produto.imagens %}
+            {{ imagem.url }}
+            {{ imagem.descricao }}
+          {% endfor %}   
+        {% endfor %}   
       </div>
-    {% endfor %}
   </div>
-</section> #}
+</section>

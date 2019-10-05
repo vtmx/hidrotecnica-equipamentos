@@ -1,14 +1,17 @@
-[
-  {
-    "titulo": "Instalações",
-    "icone": "fas fa-cogs"
-  },
-  {
-    "titulo": "Manutenção",
-    "icone": "fas fa-tools"
-  },
-  {
-    "titulo": "Consultoria",
-    "icone": "fas fa-hands-helping"
-  }
-]
+{
+  "titulo": "Serviços",
+  "tipos": [
+    {
+      "titulo": "Instalações",
+      "icone": "fas fa-cogs"
+    },
+    {
+      "titulo": "Manutenção",
+      "icone": "fas fa-tools"
+    },
+    {
+      "titulo": "Consultoria",
+      "icone": "fas fa-hands-helping"
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 <section id="clients" class="section clients">
-    <h2 class="title">Clientes</h2>
+  <h2 class="title">{{ clientes.titulo }}</h2>
 
-    <div class="container">
-    {% for cliente in clientes %}
+  <div class="container">
+    {% for cliente in clientes.clientes %}
       <div class="client col">
-       <img class="img" src="{{ cliente.logo }}" alt="Loco da empresa {{ cliente.nome }}">
+      <img class="img" src="{{ cliente.logo }}" alt="Logo da empresa {{ cliente.nome }}">
       </div>
     {% endfor %}
   </div> <!-- .container -->
