@@ -41,7 +41,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font: lighter 14px 'Roboto', sans-serif;
+  font: 14px 'Roboto', sans-serif;
   color: #333;
 }
 
@@ -253,14 +253,14 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 120px 0;
 }
 
-.section .title {
+.section > .title {
   font-size: 32px;
   position: relative;
   margin-bottom: 40px;
   text-align: center;
 }
 
-.section .title::after {
+.section > .title::after {
   display: block;
   content: '';
   height: 4px;
@@ -269,20 +269,14 @@ h1, h2, h3, h4, h5, h6, p {
   background: #ffc811;
 }
 
-/* =sobre */
-
-.about .container {
-  align-items: center;
-}
+/* =about */
 
 .about .description {
+  max-width: 50%;
+  margin: 0 auto;
   font-size: 18px;
-  line-height: 24px;
   text-align: justify;
-}
-
-.about .img {
-  max-width: calc(50% - 32px);
+  line-height: 24px;
 }
 
 /* =services */
@@ -324,6 +318,62 @@ h1, h2, h3, h4, h5, h6, p {
 
 .service .title:after {
   display: none;
+}
+
+/* =products */
+
+.product {
+  display: flex;
+  margin-top: 32px;
+}
+
+.product .gallery-img .img, .product .description {
+  display: none;
+}
+
+.product .gallery-img div:first-child .img, .product .description:first-child {
+  display: block;
+}
+
+.gallery-img {
+  margin-bottom: 16px;
+}
+
+.gallery-img .img {
+  display: block;
+  width: 100%;
+}
+
+.product .gallery-thumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.product .gallery-thumb div {
+  flex: 1;
+  margin: 0 4px;
+  border: 3px solid #eee;
+  cursor: pointer;
+}
+
+.product .gallery-thumb .img {
+  display: block;
+}
+
+.product .gallery-thumb div:first-child {
+  border-color: var(--color-secondary);
+}
+
+.product .title {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.product .description {
+  font-size: 18px;
+  font-weight: 300;
+  color: #777;
 }
 
 /* =clients */
@@ -502,18 +552,14 @@ textarea:-internal-autofill-selected {
 }
 
 .footer .container:nth-child(2) {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.footer .col {
-  width: calc(100% / 3);
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .footer .logo {
   display: block;
   margin-left: 16px;
-  width: calc(100% / 3);
+  width: calc(100% / 4);
 }
 
 .footer .col p {
