@@ -34,6 +34,32 @@ class Plugin {
     });
   }
 
+  sliderProduct(imgs, thumbs, descriptions) {
+    // this.imgs = document.querySelectorAll(imgs);
+    // this.thumbs = document.querySelectorAll(thumbs);
+    this.descriptions = document.querySelectorAll('.descriptions');
+
+    // this.imgs.forEach((img, index) => {
+    //   console.log(img.children);
+    //   if (index === 0) {
+    //     img.style.border = '5px solid red';
+    //   }
+    // });
+    
+    // this.thumbs.forEach(thumb => {
+    //   thumb.addEventListener('click', e => {
+    //     e.currentTarget.style.border = '5px solid red';
+    //   });
+
+    //   console.log(thumb.children);
+    // });
+
+    console.log(this.descriptions);
+    this.descriptions.forEach((description, index) => {
+      console.log(description, index);
+    });
+  }
+
   navScroll(elements, offset, classe) {
     this.offset = document.querySelector(offset).offsetHeight;
     this.elements = document.querySelectorAll(elements);
@@ -86,6 +112,9 @@ const plugin = new Plugin();
 plugin.sticky('.nav', 'fixed');
 plugin.scrollToTop('#scroll-top');
 plugin.navScroll('.nav a', 'nav', 'active');
+plugin.sliderProduct('.product  .gallery-img', '.product .gallery-thumb', '.product .descriptions');
+
+// Contact
 
 const contactForm = document.querySelector('.contact form');
 const notification = document.querySelector('.contact .notification');
@@ -98,7 +127,7 @@ contactForm.addEventListener('submit', e => {
   fetch(contactForm.getAttribute('action'), {
     method: 'POST',
     headers: {
-      'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
+      Accept: 'application/x-www-form-urlencoded;charset=UTF-8',
       'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
     },
     body: new URLSearchParams(formData).toString()
@@ -107,7 +136,7 @@ contactForm.addEventListener('submit', e => {
       status.textContent = 'Mensagem enviada com sucesso!';
       notification.classList.add('show', 'success');
     } else {
-      status.textContent = 'A mensagem não foi enviada, por favor tente mais tarde.'
+      status.textContent = 'A mensagem não foi enviada, por favor tente mais tarde.';
       notification.classList.add('show', 'warning');
     }
   });
