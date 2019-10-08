@@ -5,18 +5,22 @@
     {% for produto in produtos.produtos %}
       <div class="product">
         <div class="gallery col">
-          <div class="gallery-img">
+          <div class="images">
             {% for imagem in produto.imagens %}
-              <div>
-                <img class="img" src="{{ imagem.url }}" alt="Imagem">
-              </div>
+              {% if loop.first %}
+                <div class="image active"><img class="img" src="{{ imagem.url }}" alt="Imagem"></div>
+              {% else %}
+                <div class="image"><img class="img" src="{{ imagem.url }}" alt="Imagem"></div>
+              {% endif %}
             {% endfor %}
           </div>
-          <div class="gallery-thumb">
+          <div class="thumbs">
             {% for imagem in produto.imagens %}
-              <div>
-                <img class="img" src="{{ imagem.url }}" alt="Imagem">
-              </div>
+              {% if loop.first %}
+                <div class="thumb active"><img class="img" src="{{ imagem.url }}" alt="Imagem"></div>
+              {% else %}
+                <div class="thumb"><img class="img" src="{{ imagem.url }}" alt="Imagem"></div>
+              {% endif %}
             {% endfor %}
           </div>
         </div> <!-- .col -->
@@ -24,7 +28,11 @@
           <h2 class="title">{{ produto.nome }}</h2>
           <div class="descriptions">
             {% for imagem in produto.imagens %}
-              <p class="description">{{ imagem.descricao }}</p>
+              {% if loop.first %}
+                <p class="description active">{{ imagem.descricao }}</p>
+              {% else %}
+                <p class="description">{{ imagem.descricao }}</p>
+              {% endif %}
             {% endfor %}
           </div> <!-- .descriptions -->
         </div> <!-- .col -->

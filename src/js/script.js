@@ -34,30 +34,39 @@ class Plugin {
     });
   }
 
-  sliderProduct(imgs, thumbs, descriptions) {
-    // this.imgs = document.querySelectorAll(imgs);
-    // this.thumbs = document.querySelectorAll(thumbs);
-    this.descriptions = document.querySelectorAll('.descriptions');
-
-    // this.imgs.forEach((img, index) => {
-    //   console.log(img.children);
-    //   if (index === 0) {
-    //     img.style.border = '5px solid red';
-    //   }
-    // });
-    
-    // this.thumbs.forEach(thumb => {
-    //   thumb.addEventListener('click', e => {
-    //     e.currentTarget.style.border = '5px solid red';
-    //   });
-
-    //   console.log(thumb.children);
-    // });
-
-    console.log(this.descriptions);
-    this.descriptions.forEach((description, index) => {
-      console.log(description, index);
+  sliderProduct(images, thumbs, descriptions) {
+    // Images
+    this.images = document.querySelectorAll(images + ' > .image');
+    this.images.forEach((image) => {
+      console.log(image);
     });
+    
+    // Descriptions
+    this.descriptions = document.querySelectorAll(descriptions + ' > .description');
+    this.descriptions.forEach((description, index) => {
+      console.log(description);
+    });
+    
+    // Thumbs
+    this.thumbs = document.querySelectorAll(thumbs + ' > .thumb');
+    this.thumbs.forEach((thumb, index) => {
+      thumb.addEventListener('click', event => activeSlider(event, index, this.images, this.thumbs, this.descriptions));
+    });
+    
+    // Active Thumbs
+    function activeSlider(event, index, images, thumbs, descriptions) {
+      event.preventDefault();
+      ++index;
+
+      images.forEach(image => image.classList.remove('active'));
+      thumbs.forEach(thumb => thumb.classList.remove('active'));
+      descriptions.forEach(description => description.classList.remove('active'));
+
+      // Active
+      document.querySelector('.product .image:nth-child(' + index + ')').classList.add('active');
+      document.querySelector('.product .description:nth-child(' + index + ')').classList.add('active');
+      event.currentTarget.classList.add('active');
+    }
   }
 
   navScroll(elements, offset, classe) {
@@ -112,7 +121,7 @@ const plugin = new Plugin();
 plugin.sticky('.nav', 'fixed');
 plugin.scrollToTop('#scroll-top');
 plugin.navScroll('.nav a', 'nav', 'active');
-plugin.sliderProduct('.product  .gallery-img', '.product .gallery-thumb', '.product .descriptions');
+plugin.sliderProduct('.product .images', '.product .thumbs', '.product .descriptions');
 
 // Contact
 
