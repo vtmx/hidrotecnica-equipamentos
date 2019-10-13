@@ -694,6 +694,11 @@ textarea:-internal-autofill-selected {
     margin-bottom: 60px;
   }
 
+  .product {
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+
   .map .container {
     padding-bottom: 70%;
   }
