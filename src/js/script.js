@@ -35,26 +35,16 @@ class Plugin {
   }
 
   sliderProduct(images, thumbs, descriptions) {
-    // Images
-    this.images = document.querySelectorAll(images + ' > .image');
-    this.images.forEach((image) => {
-      console.log(image);
-    });
-    
-    // Descriptions
-    this.descriptions = document.querySelectorAll(descriptions + ' > .description');
-    this.descriptions.forEach((description, index) => {
-      console.log(description);
-    });
-    
-    // Thumbs
-    this.thumbs = document.querySelectorAll(thumbs + ' > .thumb');
+    this.images = document.querySelectorAll(images);
+    this.descriptions = document.querySelectorAll(descriptions);
+    this.thumbs = document.querySelectorAll(thumbs);
+
     this.thumbs.forEach((thumb, index) => {
-      thumb.addEventListener('click', event => activeSlider(event, index, this.images, this.thumbs, this.descriptions));
+      thumb.addEventListener('click', event => activeSliderProduct(event, index, this.images, this.thumbs, this.descriptions));
     });
     
     // Active Thumbs
-    function activeSlider(event, index, images, thumbs, descriptions) {
+    function activeSliderProduct(event, index, images, thumbs, descriptions) {
       event.preventDefault();
       ++index;
 
@@ -63,8 +53,8 @@ class Plugin {
       descriptions.forEach(description => description.classList.remove('active'));
 
       // Active
-      document.querySelector('.product .image:nth-child(' + index + ')').classList.add('active');
-      document.querySelector('.product .description:nth-child(' + index + ')').classList.add('active');
+      document.querySelector('.product [data-slider="img"]:nth-child(' + index + ')').classList.add('active');
+      document.querySelector('.product [data-slider="desc"]:nth-child(' + index + ')').classList.add('active');
       event.currentTarget.classList.add('active');
     }
   }
@@ -121,7 +111,7 @@ const plugin = new Plugin();
 plugin.sticky('.nav', 'fixed');
 plugin.scrollToTop('#scroll-top');
 plugin.navScroll('.nav a', 'nav', 'active');
-plugin.sliderProduct('.product .images', '.product .thumbs', '.product .descriptions');
+plugin.sliderProduct('.product [data-slider="img"]', '.product [data-slider="thumb"]', '.product [data-slider="desc"]');
 
 // Contact
 
