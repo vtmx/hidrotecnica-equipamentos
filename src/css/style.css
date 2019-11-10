@@ -322,7 +322,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* =products */
 
-.product {
+.product,
+.featured {
   display: flex;
   margin-top: 32px;
 }
@@ -339,6 +340,7 @@ h1, h2, h3, h4, h5, h6, p {
 .product .images .active, 
 .product .description.active {
   display: block;
+  animation: fade-in .5s forwards;
 }
 
 .images {
@@ -376,16 +378,46 @@ h1, h2, h3, h4, h5, h6, p {
   transform: scale(.98);
 }
 
-.product .title {
+.product .title,
+.featured .title {
   font-size: 24px;
   margin-bottom: 16px;
 }
 
-.product .description {
+.product .description,
+.featured .description {
   font-size: 18px;
   font-weight: 300;
   color: #777;
 }
+
+/* =featured */
+
+.featured {
+  padding: 40px 0;
+}
+
+.featured .container {
+  align-items: center;
+}
+
+.featured .description {
+  margin-bottom: 32px;
+}
+
+.featured .button {
+  display: inline-block;
+  padding: 16px;
+  border-radius: 5px;
+  background: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.featured .button:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
 
 /* =clients */
 
