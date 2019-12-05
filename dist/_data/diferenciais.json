@@ -1,0 +1,14 @@
+[
+  {
+    "diferencial": "Qualidade",
+    "icone": "/diferencial/qualidade.png"
+  },
+  {
+    "diferencial": "Preço",
+    "icone": "/diferencial/preco.png"
+  },
+  {
+    "diferencial": "Prazo Ágil",
+    "icone": "/diferencial/prazo-agil.png"
+  }
+]
