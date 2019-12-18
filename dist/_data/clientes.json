@@ -1,0 +1,17 @@
+{
+  "titulo": "Clientes",
+  "clientes": [
+    {
+      "nome": "CSN",
+      "logo": "/img/clientes/csn.png"
+    },
+    {
+      "nome": "Shell",
+      "logo": "/img/clientes/ipiranga.png"
+    },
+    {
+      "nome": "Ipiranga",
+      "logo": "/img/clientes/shell.png"
+    }
+  ]
+}

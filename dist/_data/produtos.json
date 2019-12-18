@@ -1,0 +1,35 @@
+{
+  "titulo": "Produto",
+  "produtos": [
+    {
+      "nome": "Bomba Auto-Aspirante",
+      "descricao": "Apresentamos um de nossos modelos de grande utilidade para descarregamento de produtos voláteis",
+      "imagens": [
+        {
+          "url": "/img/produtos/bomba-auto-aspirante-01.jpg",
+          "descricao": "Para trabalho de descarregamento de caminhão ou vagão tanque de produtos como álcool / gasolina / diesel / biodiesel e demais produtos do gênero."
+        },
+        {
+          "url": "/img/produtos/bomba-auto-aspirante-02.jpg",
+          "descricao": "Forma interna construtiva da bomba auto-aspirante, composta de carcaça de dupla voluta onde inicialmente é retirado todo o ar presente na linha, no descarregamento, após isto, passando a bombear normalmente o produto, não deixando de operar conforme ocorre em bombas centrífugas normais (não auto-aspirante)."
+        },
+        {
+          "url": "/img/produtos/bomba-auto-aspirante-03.jpg",
+          "descricao": "Acoplada a motor “à prova de explosão” atendendo as normas de áreas classificadas, com o conjunto montado à base rígida em chapa de aço e conexões flangeadas conforme norma “ansi b-16-5 150 rf” de diâmetro 4” x 4”."
+        },
+        {
+          "url": "/img/produtos/bomba-auto-aspirante-04.jpg",
+          "descricao": "Equipamento construído em ferro nodular de grande resistência a impacto e altas pressões, com vedações de teflon e selo mecânico de inox./viton / tugstênio, praticamente atendendo a todos os produtos bombeados de ordem petroquímicos e químicos."
+        },
+        {
+          "url": "/img/produtos/bomba-auto-aspirante-05.jpg",
+          "descricao": "No bocal de sucção, segue conexão flexível em trama de aço inox. 316, onde é facilitado o acoplamento à tubulação, absorvendo possíveis desalinhamentos que possam ocorrer nas montagens, para que o equipamento não venha a sofrer esforços."
+        },
+        {
+          "url": "/img/produtos/bomba-auto-aspirante-06.jpg",
+          "descricao": "Segue com o equipamento manômetro em aço inox com glicerina para medição das preções de saída."
+        }
+      ]
+    }
+  ]
+}
